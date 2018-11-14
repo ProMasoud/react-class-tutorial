@@ -1,0 +1,3 @@
+rootProject.name = 'noavari'
+
+include ':app'
