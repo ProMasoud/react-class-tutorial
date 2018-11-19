@@ -9,14 +9,10 @@ export default class App extends Component {
         super(props);
         this.getNumber = this.getNumber.bind(this);
     }
-    getNumber = () => {
-        return 2;
-    };
     render() {
         return (
             <View style={styles.container}>
                 <Text style={styles.text}>{name}</Text>
-                <Text style={styles.text}>{this.getNumber}</Text>
                 {arr.map((item, index) => {
                     return (
                         <Text style={styles.text} key={index}>
