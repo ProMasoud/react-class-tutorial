@@ -1,0 +1,12 @@
+npm install react-navigation@latest
+
+react-native link react-native-maps
+
+Google maps API Key: AIzaSyBllMGN-eHE4-j496OuTAtTbK0yLT82alU
+
+
+
+Practice:
+
+
+Install `react-native-camera` with all dependences
