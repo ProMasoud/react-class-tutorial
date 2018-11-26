@@ -9,7 +9,8 @@ import {
     ScrollView,
     TouchableHighlight,
     TouchableOpacity,
-    TouchableWithoutFeedback
+    TouchableWithoutFeedback,
+    TextInput
 } from "react-native";
 
 const { width, height } = Dimensions.get("screen");
@@ -51,6 +52,16 @@ export default class ImageClass extends Component {
                         onLongPress={() => alert("I am long press!")}>
                         <Text style={{ fontSize: 50, color: "orange" }}>
                             Long press on me!
+                        </Text>
+                    </TouchableWithoutFeedback>
+                    <TextInput
+                        style={{ backgroundColor: "#ccc", flex: 1, fontSize: 30 }}
+                        onChangeText={(text) => this.setState({ message: text })}
+                    />
+                    <TouchableWithoutFeedback
+                        onPress={() => this.props.navigation.navigate("JsxComponent", { name: this.state.message })}>
+                        <Text style={{ fontSize: 50, color: "orange" }}>
+                            go to Jsx page
                         </Text>
                     </TouchableWithoutFeedback>
                 </ScrollView>

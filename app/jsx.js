@@ -6,9 +6,10 @@ const arr = ["masoud", "ali", "hossein", "mohammad"];
 
 export default class App extends Component {
     render() {
+        const name2 = this.props.navigation.getParam("name")
         return (
             <View style={styles.container}>
-                <Text style={styles.text}>{name}</Text>
+                <Text style={styles.text}>{name2}</Text>
                 <Text style={styles.text}>{name}</Text>
                 {arr.map((item, index) => {
                     return (

@@ -1,4 +1,4 @@
-npm install react-navigation@latest
+npm install react-navigation@2.x --save
 
 react-native link react-native-maps
 
