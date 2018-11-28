@@ -1,4 +1,4 @@
-// import Image2 from "./image"
+import Image2 from "./image"
 import Jsx from "./jsx"
 import Style from "./styles/flex"
 import { Image } from "react-native";
@@ -10,7 +10,7 @@ import {
 } from "react-navigation";
 
 export default createDrawerNavigator({
-    // ImageScreen: Image2,
+    ImageScreen: Image2,
     JsxComponent: {
         screen: Jsx,
         navigationOptions: {
@@ -48,7 +48,7 @@ export const bottom = createBottomTabNavigator({
     })
 
 export const top = createTabNavigator({
-    ImageScreen: Image,
+    ImageScreen: Image2,
     JsxComponent: {
         screen: Jsx
     },
@@ -60,7 +60,7 @@ export const top = createTabNavigator({
 
 
 export const stack = createStackNavigator({
-    ImageScreen: Image,
+    ImageScreen: Image2,
     JsxComponent: {
         screen: Jsx
     },
