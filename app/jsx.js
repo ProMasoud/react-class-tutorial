@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View } from "react-native";
+import { Platform, StyleSheet, Text, View, TouchableOpacity } from "react-native";
 
 const name = "Masoud";
 const arr = ["masoud", "ali", "hossein", "mohammad"];
@@ -18,6 +18,9 @@ export default class App extends Component {
                         </Text>
                     );
                 })}
+                <TouchableOpacity onPress={() => this.props.navigation.goBack()} >
+                    <Text style={styles.text}>Go back</Text>
+                </TouchableOpacity>
             </View>
         );
     }
